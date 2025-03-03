@@ -1,8 +1,14 @@
 :root {
+    --color-primary: #a38ffa;
+    --color-secundary: #fff;
     --color-white: #fff;
     --color-black: #000;
 
-    --font1: clamp(1rem, 1vw, 1.2rem);
+    --font1: red;
     --font1: clamp(2rem, 1vw, 2.2rem);
     --font1: clamp(3rem, 1vw, 3.2rem);
+
+    --padding-one: 1.5rem;
+
+    --height-menu: 60px;
 }
