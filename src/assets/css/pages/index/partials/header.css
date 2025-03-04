@@ -1,4 +1,6 @@
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: .5rem var(--padding-one);
@@ -53,7 +55,7 @@
 
 .header_openClose {
     background: transparent;
-    position: fixed;
+    position: absolute;
     padding: 3px;
     top: 1rem;
     right: 1.5rem;
