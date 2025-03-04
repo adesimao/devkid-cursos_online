@@ -4,11 +4,14 @@
     --color-white: #fff;
     --color-black: #000;
 
-    --font1: red;
-    --font1: clamp(2rem, 1vw, 2.2rem);
-    --font1: clamp(3rem, 1vw, 3.2rem);
+    --font1: 1rem;
+    --font2: 1.3rem;
+    --font3: 1.7rem;
+    --font4: 2rem;
+    --font5: 2.5rem;
 
     --padding-one: 1.5rem;
+    --padding-btn: .7rem 1.7rem;
 
     --height-menu: 60px;
 }
