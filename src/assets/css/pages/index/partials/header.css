@@ -4,6 +4,7 @@
     padding: .5rem var(--padding-one);
     height: var(--height-menu);
     background: var(--color-primary);
+    color: var(--color-white);
 }
 
 .header_logo {
@@ -24,7 +25,7 @@
     top: 0;
     left: 0vw;
     opacity: 0;
-    background-color: #ffffffd3;
+    background-color: #000000d3;
     grid-area: menu;
     animation: menu .9s ease-in forwards;
 }
@@ -47,19 +48,22 @@
 }
 
 .header_menu li a:hover {
-    color: #ffffff;
+    opacity: .5;
 }
 
 .header_openClose {
     background: transparent;
     position: fixed;
+    padding: 3px;
     top: 1rem;
     right: 1.5rem;
+    border: 2px solid var(--color-white);
+    color: #000;
 }
 
-.header_openClose img {
+.header_openClose svg {
     display: inline-block;
-    padding: 7px;
+    font-size: 2rem;
 }
 
 @keyframes menu {
