@@ -1,0 +1,70 @@
+.banner {
+    background: var(--color-black) url('../../../../images/pages/index/discord.webp') center no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+    padding: .5rem var(--padding-one) 0 var(--padding-one);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "banner-div"
+        "banner-img"
+    ;
+}
+
+.banner > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: banner-div;
+}
+
+.banner_img{
+    height: 400px;
+    justify-self: end;
+    display: block;
+    grid-area: banner-img;
+}
+
+.banner_title {
+    font-size: var(--font5);
+    font-weight: bolder;
+
+}
+
+.banner_text {
+    margin: 2% 0px 10% 0px;
+}
+
+.banner_btn {
+    width: fit-content;
+    background: var(--color-secundary);
+    font-weight: bolder;
+    font-size: var(--font2);
+    padding: var(--padding-btn);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.banner_btn:hover {
+    background: transparent;
+    color: var(--color-secundary);
+    border-color: var(--color-secundary);
+
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        grid-template-columns: 1fr repeat(2, minmax(350px, 600px)) 1fr;
+        grid-template-areas: 
+            ". banner-div banner-img ."
+        ;
+    }
+
+    .banner_img{
+        display: block;
+        grid-area: banner-img;
+    }
+}

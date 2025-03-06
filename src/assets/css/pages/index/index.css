@@ -1,0 +1,7 @@
+@import '../../global/global.css';
+
+@import './partials/header.css';
+@import './partials/banner.css';
+@import './partials/spotlight.css';
+@import './partials/testimony.css';
+@import './partials/footer.css';

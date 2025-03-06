@@ -1,0 +1,116 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem var(--padding-one);
+    height: var(--height-menu);
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    grid-area: logo;
+}
+
+
+.header_logo h1 {
+    font-size: 25px;
+}
+
+.header_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0vw;
+    opacity: 0;
+    background-color: #000000d3;
+    grid-area: menu;
+    animation: menu .9s ease-in forwards;
+}
+
+.header_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header_menu li a {
+    display: block;
+    width: 100vw;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+    font-weight: bolder;
+    transition: .3s;
+}
+
+.header_menu li a:hover {
+    color: var(--color-secundary);
+}
+
+.header_openClose {
+    background: transparent;
+    position: absolute;
+    padding: 3px;
+    top: 1rem;
+    right: 1.5rem;
+    border: 2px solid var(--color-secundary);
+    color: #000;
+}
+
+.header_openClose svg {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+@keyframes menu {
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(350px, 600px)) 1fr;
+        grid-template-rows: 45px;
+        grid-template-areas: 
+            ". logo menu ."
+        ;
+        justify-content: space-between;
+        padding: .5rem var(--padding-one);
+    }
+
+    .header_menu {
+        display: block;
+        position: static;
+        opacity: 1;
+        background-color: transparent;
+        animation: none;
+        justify-self: right;
+    }
+
+    .header_menu ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .header_menu li a {
+        display: inline-block;
+        width: fit-content;
+        padding: 1rem;
+        border-bottom: none;
+    }
+
+    .header_openClose {
+        display: none;
+    }
+}

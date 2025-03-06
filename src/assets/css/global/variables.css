@@ -1,0 +1,17 @@
+:root {
+    --color-primary: #2600ff;
+    --color-secundary: #00d9ff;
+    --color-white: #fff;
+    --color-black: #000;
+
+    --font1: 1rem;
+    --font2: 1.3rem;
+    --font3: 1.7rem;
+    --font4: 2rem;
+    --font5: 2.5rem;
+
+    --padding-one: 1.5rem;
+    --padding-btn: .7rem 1.7rem;
+
+    --height-menu: 60px;
+}
